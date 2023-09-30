@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" hvalue="0.68" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pannable="true" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.MainDashboardController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Pane prefHeight="30.0" prefWidth="803.0" style="-fx-background-color: #BA8600;">
+               <children>
+                  <FontAwesomeIcon fill="#0a264b" glyphName="CLOSE" layoutX="764.0" layoutY="25.0" onMouseClicked="#closeApp" size="30">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></FontAwesomeIcon>
+                  <FontAwesomeIcon fx:id="ico" fill="#0a264b" glyphName="MINUS" layoutX="731.0" layoutY="26.0" onMouseClicked="#minimizeApp" size="30">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></FontAwesomeIcon>
+               </children>
+            </Pane>
+            <Pane layoutY="1799.0" prefHeight="99.0" prefWidth="803.0" style="-fx-background-color: #BA8600;">
+               <children>
+                  <Text fill="#0a264b" layoutX="34.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;Shaping Tomorrow's Innovators Today: Golden Merry University, Where Technology Meets Excellence!&quot;" wrappingWidth="762.9287109375">
+                     <font>
+                        <Font name="Century Schoolbook Bold" size="21.0" />
+                     </font></Text>
+                  <Text fill="#2c2c2c" layoutX="466.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="- Copyright 2023 Galleon Technology Inc. All rights reserved.">
+                     <font>
+                        <Font name="Californian FB" size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane fx:id="main_area" layoutX="1.0" layoutY="29.0" prefHeight="823.0" prefWidth="801.0" style="-fx-background-color: #dedede;">
+               <children>
+                  <Text fill="#0a264b" layoutX="75.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Information">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="fnameF" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="110.0" prefHeight="30.0" prefWidth="300.0" promptText="First Name" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="mnameF" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="170.0" prefHeight="30.0" prefWidth="300.0" promptText="Middle Name" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="lnameF" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="230.0" prefHeight="30.0" prefWidth="300.0" promptText="Last Name" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="suffixF" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="290.0" prefHeight="31.0" prefWidth="126.0" promptText="Suffix (if applicable)" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXComboBox fx:id="courseF" focusColor="#ba8600" layoutX="50.0" layoutY="360.0" prefHeight="30.0" prefWidth="300.0" promptText="Select Course" unFocusColor="#0a264b" />
+                  <Text fill="#0a264b" layoutX="50.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender :">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXDatePicker fx:id="dobF" defaultColor="#0a264b" layoutX="50.0" layoutY="540.0" prefHeight="30.0" prefWidth="250.0" promptText="mm/dd/yyyy" />
+                  <JFXTextField fx:id="ageF" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="600.0" prefHeight="31.0" prefWidth="74.0" promptText="Age" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <Text fill="#0a264b" layoutX="50.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthdate :">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <JFXComboBox fx:id="csF" focusColor="#ba8600" layoutX="50.0" layoutY="660.0" prefHeight="30.0" prefWidth="250.0" promptText="Civil Status" unFocusColor="#0a264b" />
+                  <JFXTextField fx:id="czF" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="720.0" prefHeight="30.0" prefWidth="250.0" promptText="Citizenship" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <ImageView fx:id="picture" fitHeight="300.0" fitWidth="300.0" layoutX="447.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/8380015.jpg" />
+                     </image>
+                  </ImageView>
+                  <Text fill="#0a264b" layoutX="528.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student Photo">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Text>
+                  <JFXButton layoutX="517.0" layoutY="411.0" onMouseClicked="#setUpPic" prefHeight="31.0" prefWidth="160.0" style="-fx-background-color: #0a264b;" text=" Browse Picture" textFill="#ba8600">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <graphic>
+                        <FontAwesomeIcon fill="#ba8600" glyphName="SEARCH" size="20" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXTextField fx:id="studidF" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="495.0" layoutY="471.0" prefHeight="39.0" prefWidth="203.0" promptText="Student ID" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXRadioButton fx:id="maleBtn" layoutX="51.0" layoutY="460.0" text="Male" textFill="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="femaleBtn" layoutX="130.0" layoutY="461.0" text="Female" textFill="#0a264b" toggleGroup="$gender">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXRadioButton>
+                  <JFXRadioButton fx:id="otherBtn" layoutX="224.0" layoutY="461.0" text="Other" textFill="#0a264b" toggleGroup="$gender">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXRadioButton>
+               </children>
+            </Pane>
+            <Pane fx:id="main_area1" layoutX="1.0" layoutY="851.0" prefHeight="860.0" prefWidth="801.0" style="-fx-background-color: #dedede;">
+               <children>
+                  <Text fill="#0a264b" layoutX="75.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Background Information">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="fatherF1" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="80.0" prefHeight="30.0" prefWidth="350.0" promptText="Father's Name" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fatherF2" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="140.0" prefHeight="31.0" prefWidth="350.0" promptText="Occupation" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fatherF3" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="454.0" layoutY="80.0" prefHeight="31.0" prefWidth="283.0" promptText="Citizenship" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="fatherF4" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="454.0" layoutY="140.0" prefHeight="31.0" prefWidth="283.0" promptText="Contact Number" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="motherF1" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="200.0" prefHeight="31.0" prefWidth="350.0" promptText="Mother's Name" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="motherF2" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="260.0" prefHeight="31.0" prefWidth="350.0" promptText="Occupation" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="motherF3" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="454.0" layoutY="200.0" prefHeight="31.0" prefWidth="283.0" promptText="Citizenship" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="motherF4" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="454.0" layoutY="260.0" prefHeight="31.0" prefWidth="283.0" promptText="Contact Number" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="guardianF1" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="320.0" prefHeight="31.0" prefWidth="350.0" promptText="Guardian's Name" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="guardianF2" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="50.0" layoutY="380.0" prefHeight="31.0" prefWidth="350.0" promptText="Occupation" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="guardianF3" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="454.0" layoutY="320.0" prefHeight="31.0" prefWidth="283.0" promptText="Citizenship" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="guardianF4" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="454.0" layoutY="380.0" prefHeight="31.0" prefWidth="283.0" promptText="Contact Number" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="addressF" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="44.0" layoutY="444.0" prefHeight="31.0" prefWidth="700.0" promptText="Complete Address" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <Text fill="#0a264b" layoutX="75.0" layoutY="579.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Education Information">
+                     <font>
+                        <Font name="Impact" size="24.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="elemF1" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="15.0" layoutY="618.0" prefHeight="30.0" prefWidth="300.0" promptText="Elementary School" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="elemF2" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="329.0" layoutY="618.0" prefHeight="31.0" prefWidth="311.0" promptText="Address" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="elemF3" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="653.0" layoutY="618.0" prefHeight="31.0" prefWidth="118.0" promptText="S.Y." unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="jhsF1" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="18.0" layoutY="677.0" prefHeight="30.0" prefWidth="300.0" promptText="Junior Highschool" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="jhsF2" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="332.0" layoutY="677.0" prefHeight="31.0" prefWidth="311.0" promptText="Address" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="jhsF3" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="656.0" layoutY="677.0" prefHeight="31.0" prefWidth="118.0" promptText="S.Y." unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="shsF1" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="18.0" layoutY="741.0" prefHeight="30.0" prefWidth="300.0" promptText="Senior Highschool" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="shsF2" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="332.0" layoutY="741.0" prefHeight="31.0" prefWidth="311.0" promptText="Address" unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="shsF3" alignment="CENTER" focusColor="#ba8600" labelFloat="true" layoutX="656.0" layoutY="741.0" prefHeight="31.0" prefWidth="118.0" promptText="S.Y." unFocusColor="#0a264b">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </Pane>
+            <JFXButton buttonType="RAISED" layoutX="408.0" layoutY="1740.0" onMouseClicked="#admitStudent" prefHeight="30.0" prefWidth="150.0" ripplerFill="#31b900" styleClass="enroll-btns" stylesheets="@../design/enrollment.css" text=" Save" textFill="#0a264b">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0a264b" glyphName="SAVE" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="581.0" layoutY="1740.0" prefHeight="30.0" prefWidth="150.0" ripplerFill="#9e0000" styleClass="enroll-btns" stylesheets="@../design/enrollment.css" text=" Clear" textFill="#0a264b">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0a264b" glyphName="REFRESH" size="20" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

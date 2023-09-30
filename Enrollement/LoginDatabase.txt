@@ -1,0 +1,60 @@
+We are going to connect
+our Database named "EnrollmentSystem.db"
+to our program.
+
+We are going to copy the File path of the Database, then we need to write "\name of your database don't forget to put the extension of the file ".db" because it will not work
+Now we are now try to test the connection
+The database is already connected.
+
+Then we are now going to proceed to our code
+I will run the code that I have done kagabi HAHAHA
+
+makapag tagalog na nga lang nag praktis english pa HAHAHAHA
+
+So ayun nakapag initialize na ako ng mga ginamit kong controls
+
+I am going to start na 
+
+Mag lalagay ako ng alert box sa condition na ito
+So meron akong code from another program ko kuhanin ko nalang para mas mapadali
+
+then the name of our database which is EnrollmentSystem tapos anong hinahanap naten? edi yung username at pin
+
+Now I am done working on my login function, I HOPE THIS WILL HAVE NO ERROR hehe
+
+We are going to set it to our button
+
+Now we are going to run it
+
+Oh no I mostly forgot, I will add user to our admin database so it can access our program.
+
+I will write some SQL Query
+Now the data successfully insert
+Oh no HAHAHAHA PIN pala 
+I must change it to numbers
+
+Okay updated na HAHAHA
+Let's try na 
+
+
+LEZZGOOO I HOPE THERE WILL BE NO ERROR 
+HAHAHHAHA
+
+it must be the "and"
+So let's try again
+
+
+I HOPE THIS WILL SUCCESS HAHAHA
+
+
+OHJHHHHH I figured it out
+HAHAHHAA
+It must be the name of the table 
+I wrote the name of the database HAHAHAH not the name of the table LOL
+admin is the name of the table
+
+SIGURADO NA AKO GAGANA NA 'TO
+hmmm
+
+
+Waaah success 

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="472.0" prefWidth="516.0" style="-fx-background-color: #BA8600;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.UserLoginController">
+   <children>
+      <Pane prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="43.0" layoutY="37.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutY="74.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutY="148.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="43.0" layoutY="185.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutY="222.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="43.0" layoutY="111.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutY="296.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="43.0" layoutY="333.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutY="370.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="43.0" layoutY="259.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="43.0" layoutY="407.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="86.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="129.0" layoutY="37.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="172.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="215.0" layoutY="37.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="258.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="301.0" layoutY="37.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="344.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="387.0" layoutY="37.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="430.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;">
+         <children>
+            <FontAwesomeIcon fx:id="ico" fill="#ba8600" glyphName="MINUS" layoutX="11.0" layoutY="31.0" onMouseClicked="#minimizeApp" size="30">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+         </children></Pane>
+      <Pane layoutX="473.0" layoutY="37.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="430.0" layoutY="74.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="473.0" layoutY="111.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="430.0" layoutY="148.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="473.0" layoutY="185.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="430.0" layoutY="222.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="473.0" layoutY="259.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="430.0" layoutY="296.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="473.0" layoutY="333.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="430.0" layoutY="370.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="473.0" layoutY="407.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="86.0" layoutY="73.0" prefHeight="335.0" prefWidth="344.0" style="-fx-background-color: #EBE4D1;">
+         <children>
+            <ImageView fitHeight="142.0" fitWidth="158.0" layoutX="101.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/schoolIcon.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="username_field" labelFloat="true" layoutX="72.0" layoutY="177.0" prefHeight="35.0" prefWidth="200.0" promptText="Username">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="pin_field" labelFloat="true" layoutX="72.0" layoutY="235.0" prefHeight="35.0" prefWidth="200.0" promptText="PIN">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <Button layoutX="122.0" layoutY="291.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="35.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@../design/enrollment.css" text=" Login">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="SIGN_IN" size="20" styleClass="login-icon" />
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="86.0" layoutY="444.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="129.0" layoutY="407.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="172.0" layoutY="444.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="215.0" layoutY="407.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="258.0" layoutY="444.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="301.0" layoutY="407.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="344.0" layoutY="444.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutY="444.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="387.0" layoutY="407.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutX="430.0" layoutY="444.0" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: #0a264b;" />
+      <FontAwesomeIcon fill="#0a264b" glyphName="CLOSE" layoutX="483.0" layoutY="29.0" onMouseClicked="#closeApp" size="30">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIcon>
+   </children>
+</AnchorPane>

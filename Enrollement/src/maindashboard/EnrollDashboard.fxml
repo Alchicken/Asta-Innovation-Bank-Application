@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" onMouseDragged="#drag" onMousePressed="#click" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="maindashboard.EnrollDashboardController">
+   <children>
+      <Pane prefHeight="30.0" prefWidth="1000.0" style="-fx-background-color: #BA8600;">
+         <children>
+            <FontAwesomeIcon glyphName="CLOSE" layoutX="973.0" layoutY="23.0" onMouseClicked="#closeApp" size="25">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fx:id="ico" glyphName="MINUS" layoutX="947.0" layoutY="24.0" onMouseClicked="#minimizeApp" size="25">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+         </children>
+      </Pane>
+      <Pane layoutY="30.0" prefHeight="50.0" prefWidth="1000.0">
+         <children>
+            <Pane layoutY="6.0" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #BA8600;">
+               <children>
+                  <Text fill="#0a264b" layoutX="15.0" layoutY="27.0" strokeType="OUTSIDE" text="Dev : ALCHICKEN">
+                     <font>
+                        <Font name="Impact" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Pane>
+            <Text fill="#0a264b" layoutX="765.0" layoutY="36.0" stroke="#ba8600" strokeType="OUTSIDE" text="DATE" wrappingWidth="73.59112548828125">
+               <font>
+                  <Font name="Impact" size="30.0" />
+               </font>
+            </Text>
+            <Button layoutX="145.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#setUp" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #BA8600; -fx-text-fill: #0a264b;" text=" Setup">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0a264b" glyphName="COGS" size="20" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="291.0" layoutY="6.0" mnemonicParsing="false" onMouseClicked="#help" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #BA8600; -fx-text-fill: #0a264b;" text=" Help">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0a264b" glyphName="QUESTION_CIRCLE" size="20" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutY="80.0" prefHeight="60.0" prefWidth="1000.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="125.0" style="-fx-background-color: #0a264b; -fx-text-fill: #BA8600;" text="    Enroll&#10; Student&#10;">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIcon fill="#ba8600" glyphName="PLUS" size="30" />
+               </graphic>
+            </Button>
+            <Button layoutX="135.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="125.0" style="-fx-background-color: #0a264b; -fx-text-fill: #BA8600;" text=" Course&#10;    Offer&#10;">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIcon fill="#ba8600" glyphName="GRADUATION_CAP" size="30" />
+               </graphic>
+            </Button>
+            <Button layoutX="270.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="130.0" style="-fx-background-color: #0a264b; -fx-text-fill: #BA8600;" text="     Student&#10; Information&#10;">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <FontAwesomeIcon fill="#ba8600" glyphName="INFO" size="30" />
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="410.0" layoutY="80.0" prefHeight="60.0" prefWidth="590.0" style="-fx-background-color: #0a264b;">
+         <children>
+            <Text fill="#ba8600" layoutX="150.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Golden Merry University">
+               <font>
+                  <Font name="Impact" size="36.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="50.0" fitWidth="100.0" layoutX="80.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <image>
+                  <Image url="@../images/schoolIcon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="600.0" prefHeight="50.0" prefWidth="1000.0" style="-fx-background-color: #BA8600;" />
+      <Pane layoutY="140.0" prefHeight="45.0" prefWidth="1000.0" style="-fx-background-color: #BA8600;">
+         <children>
+            <Text fill="#0a264b" layoutX="30.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Student LRN : ">
+               <font>
+                  <Font name="Impact" size="20.0" />
+               </font>
+            </Text>
+            <TextField layoutX="213.0" layoutY="7.0" prefHeight="30.0" prefWidth="630.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </TextField>
+            <Button layoutX="859.0" layoutY="5.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="115.0" style="-fx-background-color: #0a264b; -fx-background-radius: 50;" text=" Search" textFill="#ba8600">
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#ba8600" glyphName="SEARCH" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <TableView layoutY="185.0" prefHeight="415.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn prefWidth="200.0" text="Name" />
+          <TableColumn prefWidth="175.0" text="LRN" />
+            <TableColumn prefWidth="75.0" text="Gender" />
+            <TableColumn prefWidth="50.0" text="Age" />
+            <TableColumn prefWidth="175.0" text="Course" />
+            <TableColumn prefWidth="75.0" text="Year" />
+            <TableColumn prefWidth="128.0" text="Section" />
+            <TableColumn prefWidth="121.0" text="Civil Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

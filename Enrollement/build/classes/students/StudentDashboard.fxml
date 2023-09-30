@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="students.StudentDashboardController">
+   <children>
+      <Pane prefHeight="25.0" prefWidth="800.0" style="-fx-background-color: #0a264b;">
+         <children>
+            <FontAwesomeIcon fill="#ba8600" glyphName="CLOSE" layoutX="774.0" layoutY="18.0" onMouseClicked="#closeApp" size="18">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fx:id="ico" fill="#ba8600" glyphName="MINUS" layoutX="753.0" layoutY="19.0" onMouseClicked="#minimizeApp" size="18">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+         </children></Pane>
+      <Pane layoutY="525.0" prefHeight="25.0" prefWidth="800.0" style="-fx-background-color: #0a264b;" />
+      <Pane layoutY="25.0" prefHeight="70.0" prefWidth="800.0" styleClass="student-dasboard-top" stylesheets="@../design/enrollment.css">
+         <children>
+            <Text fill="#0a264b" layoutX="28.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Golden Merry University">
+               <font>
+                  <Font name="Impact" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutY="95.0" prefHeight="430.0" prefWidth="800.0">
+         <children>
+            <TableView fx:id="studentTable" layoutY="33.0" prefHeight="347.0" prefWidth="800.0">
+              <columns>
+                  <TableColumn fx:id="idCol" prefWidth="30.0" text="#" />
+                <TableColumn fx:id="student_idCol" prefWidth="95.0" text="Student ID" />
+                <TableColumn fx:id="nameCol" prefWidth="231.0" text="Name" />
+                  <TableColumn fx:id="genderCol" minWidth="0.0" prefWidth="67.0" text="Gender" />
+                  <TableColumn fx:id="dobCol" prefWidth="91.0" text="Date of Birth" />
+                  <TableColumn fx:id="courseCol" minWidth="0.0" prefWidth="200.0" text="Course" />
+                  <TableColumn fx:id="civil_statusCol" prefWidth="85.0" text="Civil Status" />
+              </columns>
+            </TableView>
+            <JFXButton buttonType="RAISED" layoutX="42.0" layoutY="391.0" onMouseClicked="#mainDashboard" prefHeight="30.0" prefWidth="100.0" ripplerFill="#007c34" styleClass="enroll-btns" stylesheets="@../design/enrollment.css" text=" ADD" textFill="#0a264b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0a264b" glyphName="PLUS" size="20" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="190.0" layoutY="391.0" prefHeight="33.0" prefWidth="116.0" ripplerFill="#00439a" styleClass="enroll-btns" stylesheets="@../design/enrollment.css" text=" UPDATE" textFill="#0a264b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0a264b" glyphName="ARROW_UP" />
+               </graphic>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="350.0" layoutY="391.0" prefHeight="30.0" prefWidth="100.0" ripplerFill="#900000" styleClass="enroll-btns" stylesheets="@../design/enrollment.css" text=" DELETE" textFill="#0a264b">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0a264b" glyphName="REMOVE" size="20" />
+               </graphic>
+            </JFXButton>
+            <TextField layoutX="179.0" layoutY="2.0" prefHeight="25.0" prefWidth="396.0" />
+            <Text layoutX="3.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search by Student ID :">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Text>
+            <JFXButton buttonType="RAISED" layoutX="601.0" layoutY="1.0" prefHeight="20.0" prefWidth="100.0" ripplerFill="#900000" styleClass="enroll-btns" stylesheets="@../design/enrollment.css" text=" Search" textFill="#0a264b">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon fill="#0a264b" glyphName="SEARCH" size="15" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
