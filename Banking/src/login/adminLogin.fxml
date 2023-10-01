@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.AdminLoginController">
+   <children>
+      <AnchorPane prefHeight="40.0" prefWidth="450.0" style="-fx-background-color: #032326;">
+         <children>
+            <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" layoutX="428.0" layoutY="21.0" onMouseClicked="#closeApp" size="20">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fx:id="ico" fill="WHITE" glyphName="MINUS" layoutX="405.0" layoutY="22.0" onMouseClicked="#minimizeApp" size="20" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="310.0" prefHeight="40.0" prefWidth="450.0" style="-fx-background-color: #032326;" />
+      <Pane layoutY="40.0" prefHeight="280.0" prefWidth="103.0" style="-fx-background-color: #032326;" />
+      <Pane layoutX="437.0" layoutY="40.0" prefHeight="280.0" prefWidth="13.0" style="-fx-background-color: #032326;" />
+      <ImageView fitHeight="113.0" fitWidth="103.0" layoutX="225.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/adminLogo.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="username" labelFloat="true" layoutX="162.0" layoutY="180.0" prefHeight="30.0" prefWidth="200.0" promptText="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="pin" labelFloat="true" layoutX="162.0" layoutY="232.0" prefHeight="30.0" prefWidth="200.0" promptText="PIN">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <Button layoutX="212.0" layoutY="273.0" mnemonicParsing="false" onMouseClicked="#adminLoginAccount" prefHeight="30.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@../design/bankStyle.css" text=" Login">
+         <graphic>
+            <FontAwesomeIcon glyphName="USER" size="15" />
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <FontAwesomeIcon glyphName="USER" layoutX="139.0" layoutY="200.0" size="20" />
+      <FontAwesomeIcon glyphName="EYE" layoutX="137.0" layoutY="254.0" size="20" />
+   </children>
+</AnchorPane>

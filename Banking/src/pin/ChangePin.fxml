@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pin.ChangePinController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="506.0" prefWidth="760.0" style="-fx-background-color: #053b50;">
+         <children>
+            <Pane layoutX="180.0" prefHeight="506.0" prefWidth="400.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="114.0" layoutY="56.0" text="Change PIN">
+                     <font>
+                        <Font name="Impact" size="37.0" />
+                     </font>
+                  </Label>
+                  <JFXPasswordField fx:id="old_pin" focusColor="#053b50" labelFloat="true" layoutX="50.0" layoutY="155.0" prefHeight="32.0" prefWidth="300.0" promptText="Old PIN">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXPasswordField fx:id="new_pin" focusColor="#053b50" labelFloat="true" layoutX="50.0" layoutY="234.0" prefHeight="32.0" prefWidth="300.0" promptText="New PIN">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <JFXPasswordField fx:id="con_new_pin" focusColor="#053b50" labelFloat="true" layoutX="50.0" layoutY="323.0" prefHeight="32.0" prefWidth="300.0" promptText="Confirm New PIN">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXPasswordField>
+                  <Button layoutX="109.0" layoutY="426.0" mnemonicParsing="false" onMouseClicked="#changePin" prefHeight="40.0" prefWidth="200.0" styleClass="login-btn" stylesheets="@../design/bankStyle.css" text="Change PIN">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="EYE" size="20" styleClass="login-icon" />
+                     </graphic>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

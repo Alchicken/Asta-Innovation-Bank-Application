@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.AdminBoardController">
+   <children>
+      <Pane prefHeight="40.0" prefWidth="1001.0" style="-fx-background-color: #040D12;">
+         <children>
+            <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" layoutX="975.0" layoutY="24.0" onMouseClicked="#closeApp" size="20">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fx:id="ico" fill="WHITE" glyphName="MINUS" layoutX="952.0" layoutY="26.0" onMouseClicked="#minimizeApp" size="20">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+         </children>
+      </Pane>
+      <Pane layoutY="40.0" prefHeight="560.0" prefWidth="219.0" style="-fx-background-color: #a6a3a2;">
+         <children>
+            <ImageView fitHeight="181.0" fitWidth="219.0" layoutX="37.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/adminLogo.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="44.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN">
+               <font>
+                  <Font name="Impact" size="50.0" />
+               </font>
+            </Text>
+            <Text layoutX="41.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Workspace">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Text>
+            <Button layoutX="9.0" layoutY="449.0" mnemonicParsing="false" onAction="#updateWindow" prefHeight="40.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@../design/bankStyle.css" text=" Update">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="ARROW_UP" onMouseClicked="#updateWindow" size="15" styleClass="login-icon" />
+               </graphic>
+            </Button>
+            <Button layoutX="110.0" layoutY="449.0" mnemonicParsing="false" onAction="#deleteData" prefHeight="40.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@../design/bankStyle.css" text=" Delete">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="REMOVE" size="18" styleClass="login-icon" />
+               </graphic>
+            </Button>
+            <Button layoutX="60.0" layoutY="506.0" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="40.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@../design/bankStyle.css" text=" Logout">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="SIGN_OUT" size="15" styleClass="login-icon" />
+               </graphic>
+            </Button>
+            <Button fx:id="refreshBtn" layoutX="59.0" layoutY="390.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="40.0" prefWidth="100.0" styleClass="login-btn" stylesheets="@../design/bankStyle.css" text=" Refresh">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="REFRESH" onMouseClicked="#updateWindow" size="15" styleClass="login-icon" />
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Text layoutX="240.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #103138;" text="Astra's Innovate Bank Investors " textAlignment="CENTER" wrappingWidth="760.94921875">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="investors_table" layoutX="219.0" layoutY="73.0" prefHeight="527.0" prefWidth="782.0">
+        <columns>
+          <TableColumn fx:id="investors_name" prefWidth="141.0" text="Name" />
+          <TableColumn fx:id="investors_icn" prefWidth="98.0" text="ICN" />
+            <TableColumn fx:id="investors_mobileno" prefWidth="100.0" text="MobileNo" />
+            <TableColumn fx:id="investors_address" prefWidth="127.0" text="Address" />
+            <TableColumn fx:id="investors_acn" prefWidth="86.0" text="ACN" />
+            <TableColumn fx:id="investors_pin" prefWidth="82.0" text="PIN" />
+            <TableColumn fx:id="investors_acctype" prefWidth="70.0" text="AcctType" />
+            <TableColumn fx:id="investors_balance" prefWidth="77.0" text="Balance" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

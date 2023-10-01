@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" onMouseDragged="#drag" onMousePressed="#click" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.DashboardController">
+   <children>
+      <HBox prefHeight="34.0" prefWidth="1000.0" styleClass="dashboard-top" stylesheets="@../design/bankStyle.css">
+         <children>
+            <FontAwesomeIcon fill="WHITE" glyphName="BANK" size="16">
+               <HBox.margin>
+                  <Insets left="8.0" top="8.0" />
+               </HBox.margin>
+            </FontAwesomeIcon>
+            <Label prefHeight="30.0" prefWidth="294.0" text="Astra Innovate Bank - Client Software" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <padding>
+                  <Insets left="8.0" top="4.0" />
+               </padding>
+            </Label>
+            <FontAwesomeIcon fx:id="ico" fill="WHITE" glyphName="MINUS" onMouseClicked="#minimizeApp" size="20">
+               <HBox.margin>
+                  <Insets left="625.0" right="10.0" top="8.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+            <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" onMouseClicked="#closeApp" size="25">
+               <HBox.margin>
+                  <Insets top="4.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIcon>
+         </children>
+      </HBox>
+      <Pane layoutY="34.0" prefHeight="567.0" prefWidth="240.0" styleClass="dashboard-sidebar" stylesheets="@../design/bankStyle.css">
+         <children>
+            <VBox prefHeight="145.0" prefWidth="240.0" styleClass="dashboard-profilepic" stylesheets="@../design/bankStyle.css">
+               <children>
+                  <Circle fx:id="profilepic" fill="DODGERBLUE" radius="48.0" stroke="WHITE" strokeType="INSIDE">
+                     <VBox.margin>
+                        <Insets left="65.0" top="10.0" />
+                     </VBox.margin>
+                  </Circle>
+                  <Text fx:id="name" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Your Name here" textAlignment="CENTER" wrappingWidth="239.408203125">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <Button layoutY="171.0" mnemonicParsing="false" onMouseClicked="#accountInformation" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/bankStyle.css" text="Account Information" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="BANK" size="14" styleClass="dashboard-menu-icons" />
+               </graphic>
+            </Button>
+            <Button layoutY="221.0" mnemonicParsing="false" onMouseClicked="#withdraw" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/bankStyle.css" text=" Withdraw" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="ARROW_DOWN" size="14" styleClass="dashboard-menu-icons" />
+               </graphic>
+            </Button>
+            <Button layoutY="271.0" mnemonicParsing="false" onMouseClicked="#deposit" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/bankStyle.css" text=" Deposit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="PLUS" size="14" styleClass="dashboard-menu-icons" />
+               </graphic>
+            </Button>
+            <Button layoutY="321.0" mnemonicParsing="false" onMouseClicked="#transactionHistory" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/bankStyle.css" text=" Transaction History" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="HISTORY" size="14" styleClass="dashboard-menu-icons" />
+               </graphic>
+            </Button>
+            <Button layoutY="371.0" mnemonicParsing="false" onMouseClicked="#transferMoney" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/bankStyle.css" text=" Transfer Money" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="MONEY" size="14" styleClass="dashboard-menu-icons" />
+               </graphic>
+            </Button>
+            <Button layoutY="421.0" mnemonicParsing="false" onMouseClicked="#pinChange" prefHeight="50.0" prefWidth="240.0" styleClass="dashboard-menu" stylesheets="@../design/bankStyle.css" text=" Change PIN" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="LOCK" size="14" styleClass="dashboard-menu-icons" />
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="240.0" layoutY="34.0" prefHeight="60.0" prefWidth="760.0">
+         <children>
+            <Label layoutX="32.0" layoutY="15.0" text="User Dashboard" textFill="#797979">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#5b5a5a" glyphName="HOME" layoutX="633.0" layoutY="38.0" onMouseClicked="#mainScreen" size="25" text="">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIcon>
+            <FontAwesomeIcon fill="#5b5a5a" glyphName="SIGN_OUT" layoutX="667.0" layoutY="40.0" onMouseClicked="#logout" size="25" text="">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></FontAwesomeIcon>
+         </children>
+      </Pane>
+      <Pane fx:id="dashboard_main" layoutX="240.0" layoutY="94.0" prefHeight="506.0" prefWidth="760.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>
